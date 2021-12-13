@@ -1,0 +1,63 @@
+.profile-card__body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.profile-card__avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 16px
+}
+
+.profile-card__avatar img {
+    border-radius: 50%;
+    max-width: 100%
+}
+
+.profile-card__name {
+    font-weight: 500;
+    line-height: 20px
+}
+
+.profile-card__email {
+    font-size: 15px;
+    margin-bottom: 24px
+}
+
+.dashboard {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.dashboard__orders {
+    margin-top: 24px;
+    width: 100%
+}
+
+@media (min-width:768px) {
+    .dashboard__address,
+    .dashboard__profile {
+        width: calc(50% - 12px)
+    }
+}
+
+@media (max-width:767px) {
+    .dashboard__address,
+    .dashboard__profile {
+        width: 100%
+    }
+    .dashboard__address {
+        margin-top: 24px
+    }
+}
